@@ -1,0 +1,70 @@
+/*
+ * Start Bootstrap - Heroic Features (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-brand h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-inverse {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-inverse .navbar-brand {
+    font-weight: 400;
+}
+
+.navbar-inverse .nav li a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.light {
+    font-weight: 400;
+}
+
+
+.hero-spacer{
+    background: url(https://c7.staticflickr.com/1/770/21396167222_e26a1bd2bc_h.jpg) no-repeat;
+    color:#FFFFFF;
+}
+
+ .hero-spacer h1 p {
+    color:#FFFFFF;
+}
+
+#mapid {
+    height: 350px;
+}
