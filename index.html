@@ -18,6 +18,8 @@
     <link href="css/heroic-features.css" rel="stylesheet">
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="leaflet/leaflet.css" />
 
 
@@ -65,16 +67,14 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Pano Gallery</a></li>
                             <li><a href="#">Featured</a></li>
+                            <li><a href="#">Tutorial</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="register.html">New Account</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Sign In</a>
+                        <a href="login.html">Sign In | Login</a>
                     </li>
                 </ul>
             </div>
@@ -85,30 +85,30 @@
 
 
 
+
     <!-- Page Content -->
-    <div class="container">
+
+        <!-- Panorama-->
+
+        <div class = "jumbotron">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.3/pannellum.htm?panorama=https://pannellum.org/images/cerro-toco-0.jpg&amp;autoLoad=false">
+            </iframe>
+            </div>
+        </div>
 
 
-        <!-- Jumbotron Header-->
-        <header class="jumbotron hero-spacer">
-            <h1>Welcome!</h1>
-            <p>"Puerto Rico Desde La Azotea" is a panorama viewer Website looking through the rooftops of Puerto Rico.</p>
-
-            </p>
-        </header>
-
-        <hr>
-
+<div class = "container-fluid">
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Latest Featured</h3>
+                <h3>Latest Featured Panoramas</h3>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
+        <div class="row text-center slideanim">
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
@@ -188,7 +188,8 @@
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
+
+        <div class="row text-center slideanim">
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
@@ -265,6 +266,7 @@
             </div>
 
         </div>
+</div>
         <!-- /.row -->
 
         <div class="text-center">
@@ -289,14 +291,17 @@
             </nav>
         </div>
 
+
+
         <!-- Map -->
-        <div class = "container">
+        <div class = "container-fluid bg-grey" >
+            <h1>Checkout Panoramas</h1>
                 <div id="mapid"></div>
         </div>
         <!-- end map div -->
 
 
-        <hr>
+
 
         <!-- Footer -->
         <footer>
@@ -317,8 +322,7 @@
             </div>
         </footer>
 
-    </div>
-    <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -340,7 +344,18 @@
             id: 'mapbox.streets'
         }).addTo(mymap);
     </script>
+<script>
+    $(window).scroll(function() {
+        $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
 
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
