@@ -23,6 +23,9 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="adminLTE/iCheck/square/blue.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +54,7 @@
                 </i>
                 <span class="light">
                                     Helix Development
-                            </span>
+                </span>
                 <h6>
                     Puerto Rico Desde La Azotea
                 </h6>
@@ -74,11 +77,9 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="register.html">New Account</a>
+                    <a href="login.html">Sign In | Login</a>
                 </li>
-                <li>
-                    <a href="login.html">Sign In</a>
-                </li>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -166,6 +167,18 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- iCheck -->
+<script src="adminLTE/iCheck/icheck.min.js"></script>
+<script>
+    $(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
 </body>
 
 </html>
