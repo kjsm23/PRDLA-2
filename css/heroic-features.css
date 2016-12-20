@@ -4,10 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 30px;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
 }
 
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
 
 .hero-spacer {
     margin-top: 50px;
@@ -17,14 +29,51 @@ body {
     margin-bottom: 30px;
 }
 
+.jumbotron {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 25px;
+    font-family: Montserrat, sans-serif;
+}
+
 footer {
     margin: 50px 0;
+}
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #000;
+    z-index: 9999;
+    border: none;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+
+}
+
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #fff !important;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
 }
 
 .navbar-brand h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -32,7 +81,7 @@ footer {
 .navbar-inverse {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     background-color: black;
 }
 
@@ -51,20 +100,50 @@ footer {
     transition: background 0.3s ease-in-out;
 }
 
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+.dropdown-menu li a {
+    color: #000 !important;
+}
+.dropdown-menu li a:hover {
+    background-color: #d5d5d5 !important;
+}
 .light {
     font-weight: 400;
 }
 
 
-.hero-spacer{
-    background: url(https://c7.staticflickr.com/1/770/21396167222_e26a1bd2bc_h.jpg) no-repeat;
-    color:#FFFFFF;
-}
-
- .hero-spacer h1 p {
-    color:#FFFFFF;
-}
-
 #mapid {
     height: 350px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
